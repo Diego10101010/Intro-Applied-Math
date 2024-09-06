@@ -1,7 +1,15 @@
 % Exercise 1-1.
 % 
-% Load the image dog.jpg and compute the full SVD. 
+% Load the image dog.jpg and compute the full SVD.
+
+dog=imread('dog.jpg');
+[U,S,V]=svd(dog);
+
 % Choose a rank r < m and confirm that the matrix U^TU is the r × r identity 
+
+r=100;
+
+
 % matrix. Now confirm that UU^T is not the identity matrix. 
 % Compute the norm of the error between UU^T and the n × n identity matrix 
 % as the rank r varies from 1 to n and plot the error.
